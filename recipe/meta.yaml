@@ -9,7 +9,7 @@ source:
   sha256: 49c4b1022e601e22a2fb5fc6fc2af69070cceb5cdd01a880ae7379caef8f2f90
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - cftime
-    - matplotlib
+    - matplotlib-base
     - numpy
     - six
 
