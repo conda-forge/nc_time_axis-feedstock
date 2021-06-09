@@ -6,19 +6,20 @@ package:
 
 source:
   url: https://github.com/SciTools/nc-time-axis/archive/v{{ version }}.tar.gz
-  sha256: 49c4b1022e601e22a2fb5fc6fc2af69070cceb5cdd01a880ae7379caef8f2f90
+  sha256: 2fae9b904a5284581aa8ac1fd954776fc246339665411724b23d0e3b4449332f
 
 build:
-  number: 1
+  number: 2
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
+    - setuptools
   run:
-    - python
+    - python >=3.6
     - cftime
     - matplotlib-base
     - numpy
@@ -30,12 +31,13 @@ test:
 
 about:
   home: https://github.com/SciTools/nc-time-axis
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'Provides support for non-gregorian datetimes in matplotlib based on the cftime package'
+  summary: Provides support for a cftime axis in matplotlib
 
 extra:
   recipe-maintainers:
     - lbdreyer
     - ocefpaf
     - pelson
+    - bjlittle
