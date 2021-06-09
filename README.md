@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nc_time_axis-feedstock/blob/master/LICENSE.txt)
 
-Summary: Provides support for non-gregorian datetimes in matplotlib based on the cftime package
+Summary: Provides support for a cftime axis in matplotlib
 
 Current build status
 ====================
