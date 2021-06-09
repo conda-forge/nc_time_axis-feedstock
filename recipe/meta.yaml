@@ -32,7 +32,7 @@ about:
   home: https://github.com/SciTools/nc-time-axis
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'Provides support for non-gregorian datetimes in matplotlib based on the cftime package'
+  summary: Provides support for a cftime axis in matplotlib
 
 extra:
   recipe-maintainers:
