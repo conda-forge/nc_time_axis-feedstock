@@ -14,11 +14,11 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - cftime
     - matplotlib-base
     - numpy
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/SciTools/nc-time-axis
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'Provides support for non-gregorian datetimes in matplotlib based on the cftime package'
 
