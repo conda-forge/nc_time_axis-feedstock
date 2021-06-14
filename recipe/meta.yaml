@@ -10,7 +10,7 @@ source:
   sha256: 2d7ce655adde2df5794805d6055707e22d60ea0405234d8077b716508f95fed7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - python >=3.7
-    - cftime
+    - cftime >=1.5
     - matplotlib-base
     - numpy
 
