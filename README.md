@@ -119,4 +119,5 @@ Feedstock Maintainers
 * [@lbdreyer](https://github.com/lbdreyer/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@pelson](https://github.com/pelson/)
+* [@spencerkclark](https://github.com/spencerkclark/)
 
