@@ -1,5 +1,5 @@
 {% set name = "nc-time-axis" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d64847b930261b6793040b5fe5195f8ee90a2e57aadce9b2df692ca35de74b92
+  sha256: 72d80f492f34bbf59490838d8cb3d92f14e88900b0ee35498b2b33c82795eb81
 
 build:
   number: 0
