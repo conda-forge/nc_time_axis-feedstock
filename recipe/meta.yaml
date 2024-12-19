@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 72d80f492f34bbf59490838d8cb3d92f14e88900b0ee35498b2b33c82795eb81
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - cftime >=1.5
     - matplotlib-base
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - nc_time_axis
 
